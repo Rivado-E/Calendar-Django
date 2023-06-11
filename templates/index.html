@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block sty %}
+<link rel="stylesheet" href="../static/css/homestyle.css"> 
+{% endblock %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div class="header">
+    <h1>{{mm_yy}}</h1>
+
+    <div class="container">
+        <button class="btn options">
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+        </button>
+
+        <button class="btn">
+            <i class="fa-solid fa-less-than"></i>
+        </button>
+
+        <button class="btn">
+            <i class="fa-solid fa-greater-than"></i>
+        </button class="btn">
+        
+        <button id="download" class="btn">
+            <i class="fa-regular fa-arrow-down-to-line"></i>
+        </button>
+    </div>
+</div>
+
+<h2>This is the main page or home page</h2>
+{% endblock %}
